@@ -1,0 +1,122 @@
+body {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.top,
+.container {
+  max-width: 1184px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3rem;
+}
+
+/* <!-- top start --> */
+.top-color {
+  height: 16rem;
+  background-color: rgb(248, 248, 248);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  height: 16rem;
+  border-bottom: 1rem;
+  border-color: black;
+}
+.userimg {
+  width: 4rem;
+  height: 4rem;
+  .bi-person-circle {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.top-text {
+  padding: 0 1rem;
+  h2 {
+    margin: 0.5rem 0;
+  }
+  p {
+    margin: 0.5rem 0;
+    color: rgb(91, 91, 91);
+  }
+}
+
+/* <!-- top end --> */
+/* <!-- container start --> */
+h3 {
+  margin: 2rem 0;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 20rem;
+  margin: 0 2rem 1rem 0;
+  overflow: hidden;
+  img {
+    width: 20rem;
+    transition: all 0.4s;
+    
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+  h4,
+  p {
+    margin: 0.5rem 0;
+  }
+  p {
+    font-size: 0.8rem;
+    color: rgb(91, 91, 91);
+  }
+}
+
+/* <!-- container end --> */
+/* <!-- noitem container start --> */
+
+.logintextarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem 0;
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+}
+
+.sad {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+p.login {
+  color: rgb(225, 50, 80);
+}
+
+/* <!-- noitem container end --> */
+
+@media screen and (max-width: 768px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .project-item {
+    width: 100%;
+    padding-right: 2rem;
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+}

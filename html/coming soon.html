@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>網站建置中</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: rgb(40, 50, 80);
+    }
+
+    .show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 20%;
+      right: 1%;
+      left: 1%;
+      img {
+        width: 40rem;
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 14rem;
+          padding: 0.8rem 1rem 0 0;
+        }
+      }
+
+      h1 {
+        color: white;
+        padding-top: 2rem;
+      }
+
+      h2 {
+        color: rgb(255, 160, 0);
+        font-size: 2rem;
+      }
+    }
+
+    .dot {
+      position: absolute;
+      left: 0;
+      width: 2rem;
+      height: 0.2rem;
+      background: rgb(255, 160, 0);
+      animation-name: run;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      margin-top: 1rem;
+    }
+    @keyframes run {
+      from {
+        left: 30%;
+      }
+      to {
+        left: 70%;
+        opacity: 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      @keyframes run {
+        from {
+          left: 10%;
+        }
+        to {
+          left: 90%;
+          opacity: 0;
+        }
+      }
+    }
+
+    p {
+      width: 40rem;
+      color: white;
+    }
+  </style>
+
+  <body>
+    <div class="show">
+      <img src="../images/網站維修.svg" alt="" />
+      <div class="title">
+        <img src="../images/可利go icon_字-深藍用.svg" alt="" />
+        <h1>網站建置中</h1>
+      </div>
+      <h2>coming soon</h2>
+      <p><span class="dot">　</span></p>
+    </div>
+  </body>
+</html>

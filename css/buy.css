@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica',"Noto Sans TC", sans-serif;
+}
+
+.title,
+.container,
+.purchase,
+.input-line {
+  max-width: 1184px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 3rem;
+}
+
+.purchase {
+  display: flex;
+  padding: 0 3rem 2rem 3rem;
+  img {
+    width: 18rem;
+    height: 100%;
+    padding-right: 2rem;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .price {
+    display: flex;
+    padding-top: 3rem;
+    del {
+      padding-top: 10px;
+    }
+    h1,
+    h2 {
+      color: rgb(225, 50, 80);
+    }
+
+  }
+  .price2 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.bg-color {
+  background-color: rgb(245, 245, 245);
+}
+
+.productline-text {
+  max-width: 1184px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 4rem 3rem 0 3rem;
+
+  /* p,h3{
+  width: 113px;
+  text-align: center;
+} */
+
+  h3 {
+    color: rgb(225, 50, 80);
+  }
+}
+
+.productline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1130px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 5rem 2rem 5rem;
+}
+
+/* .dot{
+display: flex;
+justify-content: space-between;
+width: 70%;
+z-index: 2;
+position: absolute;
+
+}
+
+.dot1,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7 {
+  background-color: rgb(225, 50, 80);
+  width: 0.8rem;
+  height: 0.8rem;
+  position: relative;
+  border-radius: 1rem;
+} */
+
+.color-line {
+  background-color: rgb(225, 50, 80);
+  width: 22%;
+  height: 0.5rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.bg-line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgb(220, 220, 220);
+  border-radius: 0 1rem 1rem 0;
+  z-index: 0;
+}
+
+/* 基本資料填寫 */
+
+.member-list {
+  font-size: 1.2rem;
+  background-color: white;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+
+  .list {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    border-bottom: 2px solid rgb(245, 245, 245);
+    padding: 1rem 0;
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      p {
+        padding: 0.5rem 1rem 0.5rem 0;
+      }
+    }
+
+    .gender {
+      display: flex;
+      align-items: center;
+      input {
+        height: 1.2rem;
+        width: 2.5rem;
+        color: rgb(225, 50, 80);
+      }
+    }
+  }
+
+  input {
+    outline: none;
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 1.2rem;
+    width: 90%;
+    padding: 0.2rem;
+  }
+
+  select {
+    outline: none;
+    border-color: rgb(220, 220, 220);
+    font-size: 1.2rem;
+    padding: 0.2rem;
+  }
+
+  .twzipcode {
+    .address {
+      width: 14rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.list2 {
+  display: block;
+  align-items: center;
+  padding-top: 1rem;
+
+  .idcard-text {
+    display: flex;
+    align-items: center;
+    .small {
+      font-size: 1rem;
+      padding-left: 1rem;
+      color: rgb(150, 150, 150);
+    }
+  }
+
+  .list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .idcard {
+    width: 100%;
+    height: 13rem;
+    color: rgb(150, 150, 150);
+    background-color: rgb(250, 250, 250);
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+
+    p {
+      display: flex;
+      justify-content: center;
+    }
+    .noflex {
+      display: flex;
+      justify-content: center;
+      h2 {
+        padding-bottom: 8rem;
+        color: rgb(225, 50, 80);
+      }
+      p {
+        padding-top: 8px;
+      }
+    }
+
+    .down {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
+  justify-content: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 3rem 5rem 3rem;
+
+  button {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    color: white;
+    border: 0;
+    border-radius: 3rem;
+    padding: 1rem 0;
+  }
+
+  :hover {
+    background-color: rgb(225, 50, 80);
+    border: 0;
+  }
+}
+
+.notice {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 1088px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+  color: rgb(91, 91, 91);
+}
+
+.bg-color {
+  background-color: rgb(245, 245, 245);
+}
+
+/* 交易授權 */
+.trade-list {
+  font-size: 1.2rem;
+  background-color: white;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 1rem;
+  padding: 2rem 3rem 5rem 3rem;
+
+  .list {
+    border-bottom: 2px solid rgb(245, 245, 245);
+    padding: 1rem 0;
+
+    .list-item {
+      display: grid;
+      grid-template-columns: 1.5fr 5fr;
+      grid-column-gap: 5rem;
+      align-items: center;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 22rem;
+    }
+  }
+
+  input {
+    outline: none;
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 1.2rem;
+    padding: 0.2rem;
+  }
+
+  select {
+    outline: none;
+    border-color: rgb(220, 220, 220);
+    font-size: 1.2rem;
+    padding: 0.2rem;
+  }
+
+  button {
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+    background-color: rgb(225, 50, 80);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .member-list {
+    padding: 2rem;
+
+    .list {
+      display: block;
+      border-bottom: 0;
+      padding: 0;
+
+      .list-item {
+        padding: 1rem 0 0 0;
+      }
+    }
+  }
+
+  .list2 {
+    .list-item {
+      display: block;
+    }
+
+    .idcard-text {
+      display: block;
+      .small {
+        padding: 0.5rem 0 0 0;
+      }
+    }
+
+    .idcard {
+      width: 100%;
+      height: 10rem;
+      padding: 1.5rem 0;
+
+      .noflex {
+        h2 {
+          padding-bottom: 4rem;
+          color: rgb(225, 50, 80);
+        }
+        p {
+          padding-top: 8px;
+        }
+      }
+
+      .down {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .switch {
+    grid-column-gap: 2rem;
+  }
+
+  /* 交易授權 */
+  .trade-list {
+    .list {
+      border-bottom: 0;
+      padding: 0.5rem 0;
+
+      .list-item {
+        display: block;
+      }
+      .info {
+        width: 22rem;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .trade-list {
+    button {
+      left: 40%;
+      right: 40%;
+    }
+  }
+}

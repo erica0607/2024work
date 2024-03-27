@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", "Noto Sans TC", sans-serif;
+}
+
+.plan-area,
+.introduce,
+.container,
+.btn,
+#question-area {
+  max-width: 1184px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3rem;
+}
+
+.banner {
+  background-color: black;
+  img {
+    width: 1184px;
+    max-height: 32rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1184px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* <!-- plan start --> */
+
+.plan {
+  display: flex;
+}
+
+.plancard,
+.plancard-sub {
+  width: 33%;
+  padding: 2rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  position: relative;
+  color: rgb(44, 49, 80);
+  cursor: pointer;
+
+  .submark {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  h3 {
+    margin: 0;
+  }
+  p.caption {
+    padding: 0.5rem 0;
+  }
+
+  p.subnumber,
+  p.more {
+    font-size: 0.8rem;
+    margin: 2px;
+  }
+
+  del {
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
+  }
+
+  .cash {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+  }
+
+  p.price {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 4px 0 0.5rem 0;
+  }
+
+  button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    background-color: rgba(225, 50, 80, 0.5);
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding: 0.5rem 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.plancard {
+  margin-left: 2rem;
+
+  .planimg {
+    overflow: hidden;
+    width: 100%;
+    img {
+      transition: all 0.4s;
+    }
+  }
+
+  button {
+    background-color: rgb(225, 50, 80);
+    cursor: pointer;
+  }
+  a :hover,
+  a :active {
+    background-color: rgb(225, 10, 45);
+  }
+}
+.plancard:hover {
+  img {
+    transform: scale(1.1);
+  }
+}
+
+/* <!-- plan end --> */
+
+/* <!-- introduce start --> */
+
+.introduce {
+  img {
+    width: 100%;
+  }
+}
+
+.page {
+  position: relative;
+  padding-top: 6rem;
+}
+
+.btn {
+  display: flex;
+  background: linear-gradient(
+    to top,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  padding: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+a.morebtn {
+  font-size: 1rem;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  align-items: center;
+  padding: 1rem 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagenext {
+  display: none;
+}
+
+/* <!-- introduce end --> */
+
+/* <!-- container start --> */
+
+h3 {
+  margin: 2rem 0;
+}
+
+.arcitle-card {
+  display: grid;
+  grid-template-columns: 18rem;
+  grid-auto-rows: 12rem;
+  grid-auto-flow: column;
+  padding-bottom: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.arcitle-img {
+  width: 18rem;
+  height: 12rem;
+}
+
+.arcitle-bar {
+  display: flex;
+  align-items: center;
+}
+
+.type {
+  background-color: rgb(225, 50, 80);
+  color: rgb(255, 255, 255);
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  line-height: 2rem;
+}
+
+.type-free {
+  background-color: rgb(91, 91, 91);
+  color: rgb(255, 255, 255);
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  line-height: 34px;
+}
+
+.arcitle-text {
+  padding-left: 6rem;
+}
+
+p.title-date {
+  font-size: 0.8rem;
+  color: rgb(91, 91, 91);
+  padding-left: 1rem;
+}
+
+p.view {
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgb(91, 91, 91);
+  bottom: 0;
+}
+
+.bi-eye-fill {
+  height: 0.8rem;
+}
+
+p.title-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  height: 7rem;
+  padding-top: 1rem;
+}
+a:hover {
+  p.title-text {
+    color: rgb(225, 50, 80);
+  }
+}
+
+/* <!-- container end --> */
+/* <!-- question start --> */
+#question-area {
+  padding-bottom: 4rem;
+
+  .collapsible {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(217, 217, 217);
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0.2rem 0;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgb(217, 217, 217);
+  }
+
+  .collapsible:after {
+    content: "\2BC6";
+    float: right;
+    margin-left: 0.5rem;
+  }
+
+  .active:after {
+    content: "\2BC5";
+  }
+
+  .content {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  p {
+    padding: 1rem 0;
+  }
+}
+/* 
+.question-title {
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(217, 217, 217);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem 0;
+  p,
+  svg {
+    padding: 0 1rem;
+  }
+}
+.question-answer {
+  width: 100%;
+  margin: 0.5rem 0;
+  line-height: 1.5rem;
+  p {
+    padding: 0 1rem;
+  }
+} */
+
+/* <!-- question end --> */
+
+@media screen and (max-width: 768px) {
+  .introduce,
+  .container,
+  .btn,
+  .question-area,
+  .plan-area {
+    padding: 0 1.5rem;
+  }
+
+  #question-area {
+    padding: 0 1.5rem 3rem;
+  }
+
+  /* <!-- plan start --> */
+
+  .plancard,
+  .plancard-sub {
+    margin-bottom: 2rem;
+  }
+
+  .plan {
+    display: block;
+  }
+
+  .plancard,
+  .plancard-sub {
+    width: auto;
+  }
+
+  .plancard {
+    margin-left: 0rem;
+  }
+
+  /* <!-- plan end --> */
+
+  /* <!-- introduce start --> */
+
+  .btn {
+    padding: 1rem 0;
+  }
+
+  button.morebtn {
+    padding: 0.6rem 6rem;
+  }
+
+  /* <!-- introduce end --> */
+
+  /* <!-- arcitle-card start --> */
+  .arcitle-card {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .arcitle-img img {
+    width: 8rem;
+    padding-top: 2rem;
+  }
+
+  .arcitle-text {
+    padding-left: 2rem;
+  }
+
+  /* <!-- arcitle-card end --> */
+}

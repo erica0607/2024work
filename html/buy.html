@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buy</title>
+    <link rel="stylesheet" href="../css/buy.css" />
+    <link rel="stylesheet" href="../css/nav_footer.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <script src="../js/nav.js"></script>
+    <!-- nav end -->
+
+    <!-- title start -->
+    <div class="bg-color">
+      <div class="title">
+        <h2>商品訂閱</h2>
+      </div>
+      <!-- title end -->
+
+      <!-- container start -->
+      <div class="purchase">
+        <img src="../images/伊森壹日報A方案.png" alt="" />
+        <div class="name">
+          <h2>壹日報B方案</h2>
+            <h3>Eason 顧問</h3>
+            <div class="price">
+              <del>$1,699/月</del>
+              &nbsp;&nbsp;
+              <div class="price2"><h2>優惠:</h2><h1>$1,399</h1><h2>/月</h2></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="productline-text">
+      <p>確認商品</p>
+      <h3>資本資料填寫</h3>
+      <p>交易授權</p>
+      <p>投資屬性調查</p>
+      <p>盡職調查</p>
+      <p>委任簽署</p>
+      <p>訂閱完成</p>
+    </div>
+    <div class="productline">
+      <div class="color-line"></div>
+      <div class="bg-line"></div>
+    </div>
+    <!-- 基本資料填寫 start-->
+    <div class="input-line">
+      <div class="member-list">
+        <h3>個人資料填寫</h3>
+        <div class="list">
+          <div class="list-item">
+            <p>姓　名:</p>
+            <div class="info"><input type="text" /></div>
+          </div>
+          <div class="list-item">
+            <p>性　別:</p>
+            <div class="gender">
+              <input type="radio" value="male" id="male" name="gender" />
+              <label for="male">男性</label>
+              <input type="radio" value="female" id="female" name="gender" />
+              <label for="female">女性</label>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <p>身分證:</p>
+            <div class="info"><input type="text" /></div>
+          </div>
+          <div class="list-item">
+            <p>手　機:</p>
+            <div class="info"><input type="tel" /></div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <p>e- mail:</p>
+            <div class="info"><input type="email" /></div>
+          </div>
+          <div class="list-item">
+            <p>地　址:</p>
+            <div class="twzipcode">
+              <select data-role="county" class="county"></select>
+              <select data-role="district" class="district"></select>
+              <input type="hidden" data-role="zipcode" />
+              <input class="address" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="list2">
+          <div class="idcard-text">
+            <p>身分證掃描:</p>
+            <p class="small">
+              請拖曳您的身份證正/反面照片，至指定的置入框中或點選置入框，進行影象檔案選取
+            </p>
+          </div>
+          <div class="list-item">
+            <div class="idcard">
+              <div class="top">
+                <p>請您點擊選取或拖曳</p>
+                <div class="noflex">
+                  <p>您的身分證</p>
+                  <h2>正面</h2>
+                  <p>照片至本輸入格</p>
+                </div>
+              </div>
+              <div class="down">
+                <p>請選擇橫式且檔案大小小於1M之圖片檔案</p>
+                <p>(如:jpg,png等型態圖檔)</p>
+              </div>
+            </div>
+            <div class="idcard">
+              <div class="top">
+                <p>請您點擊選取或拖曳</p>
+                <div class="noflex">
+                  <p>您的身分證</p>
+                  <h2>背面</h2>
+                  <p>照片至本輸入格</p>
+                </div>
+              </div>
+              <div class="down">
+                <p>請選擇橫式且檔案大小小於1M之圖片檔案</p>
+                <p>(如:jpg,png等型態圖檔)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="switch">
+      <button>&#10094; &nbsp; 上一頁 &nbsp; &nbsp;</button>
+      <button>&nbsp; &nbsp; 下一頁 &nbsp; &#10095;</button>
+    </div>
+    <!-- 基本資料填寫 end-->
+
+    <!-- 交易授權 start-->
+    <div class="input-line">
+      <div class="trade-list">
+        <h3>交易授權</h3>
+        <div class="list">
+          <div class="list-item">
+            <p>支付金額</p>
+            <div class="info">$1,399</div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <p>信用卡卡號</p>
+            <div class="info">
+              <input type="text" minlength="4" maxlength="4" size="1"/>&#9472;
+              <input type="text" minlength="4" maxlength="4" size="1"/>&#9472;
+              <input type="text" minlength="4" maxlength="4" size="1"/>&#9472;
+              <input type="text" minlength="4" maxlength="4" size="1"/>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <p>信用卡有效年月</p>
+            <div class="info">
+              <div><select>
+               <option>01</option>
+               <option>02</option>
+               <option>03</option>
+               <option>04</option>
+               <option>05</option>
+               <option>06</option>
+               <option>07</option>
+               <option>08</option>
+               <option>09</option>
+               <option>10</option>
+               <option>11</option>
+               <option>12</option>
+              </select>&nbsp;月&nbsp;
+              <select>
+               <option>2024</option>
+               <option>2025</option>
+               <option>2026</option>
+               <option>2027</option>
+               <option>2028</option>
+               <option>2029</option>
+               <option>2030</option>
+               <option>2031</option>
+               <option>2032</option>
+               <option>2033</option>
+              </select>&nbsp;年&nbsp;</div>
+          </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <p>信用卡背面末三碼</p>
+            <div class="info"><input type="text" minlength="3" maxlength="3" size="1"/></div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <p>購買人Email</p>
+            <div class="info"><input type="email" /></div>
+          </div>
+        </div>
+        <button>確認付款</button>
+      </div>
+      </div>
+    </div>
+
+    <!-- 交易授權 end-->
+
+    <!-- 訂閱完成 start-->
+
+
+
+
+
+
+    <!-- 訂閱完成 end-->
+
+
+    <div class="bg-color">
+      <div class="notice">
+        <h3>注意事項 ：</h3>
+        <p>
+          1.本服務訂閱為自動續訂，例如：2024-03-01 訂閱成功後，下次續訂日是
+          2025-03-01，直到您取消為止。<br />
+          2.訂閱後如欲取消，僅能於下月開始取消，在有效期間內無法提前取消訂閱服務。<br />
+          3.依據【投信投顧法規第八十三條】投顧需簽訂證券投資顧問契約，載明雙方權利義務。
+        </p>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- footer start -->
+    <script src="../js/footer.js"></script>
+    <!-- footer end -->
+
+    <script src="https://code.essoduke.org/js/twzipcode/twzipcode.latest.js"></script>
+    <script type="text/javascript" src="../js/buy.js"></script>
+  </body>
+</html>

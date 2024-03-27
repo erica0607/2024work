@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coupon</title>
+    <link rel="stylesheet" href="../css/coupon.css" />
+    <script src="https://npmcdn.com/jquery@3.1.0"></script>
+    <script type="text/javascript" src="../js/coupon.js"></script>
+  </head>
+  <body>
+    <!-- title start -->
+
+    <div class="title">
+      <h2>我的優惠券</h2>
+      <div class="coupon-number">
+        <input
+          type="search"
+          placeholder="請輸入折扣代碼"
+        />
+        <input type="submit" class="enter" value="兌換" />
+      </div>
+    </div>
+
+    <!-- title end -->
+
+    <!-- container start -->
+
+    <div class="container">
+      <div class="tab">
+        <a href="#" class="tab-available">可使用</a>
+        <a href="#" class="tab-used">已使用</a>
+        <a href="#" class="tab-expired">已失效</a>
+      </div>
+      <div class="coupon">
+        <!-- 可使用優惠券樣式 -->
+        <div class="list">
+          <div class="money"><h1>$100</h1></div>
+          <div class="text">
+            <h3>新戶優惠</h3>
+            <div class="detail">
+              <p>使用期限:2024/04/30</p>
+              <p>折扣金額$100</p>
+            </div>
+          </div>
+          <button class="state red">我要使用</button>
+        </div>
+
+        <!-- 已使用優惠券樣式 -->
+        <div class="used-list">
+          <div class="money"><h1>$100</h1></div>
+          <div class="text">
+            <h3>新戶優惠</h3>
+            <div class="detail">
+              <p>使用期限:2024/04/30</p>
+              <p>折扣金額$100</p>
+            </div>
+          </div>
+          <div class="state">已使用</div>
+        </div>
+
+        <!-- 沒有優惠券樣式 -->
+        <div class="nothing">
+          <div class="imgcenter">
+            <img src="../images/noting-01.png" alt="" />
+          </div>
+          <p>目前沒有優惠券</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- container end -->
+  </body>
+</html>
